@@ -43,5 +43,5 @@ predict_btn = st.button("Predict Price")
 # Prediction Logic
 if predict_btn:
     prediction = model.predict([[area]])
-    st.success(f"### The estimated price is: ${prediction[0]:,.2f}")
+    st.success(f"### The estimated price is: ₹{prediction[0]:,.2f}")
     st.balloons()
